@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfume Co. | Luxury Fragrances in South Africa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header with Hamburger-->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="/" class="logo">The Perfume <span>Co.</span></a>
+            
+            <nav class="nav-links">
+                <a href="#shop">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#discover">Discover</a>
+                <a href="#about">About</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#seller" class="btn btn-gold">Become a Seller</a>
+                <div class="currency-selector">
+                    <button class="currency-btn">
+                        <i class="fas fa-money-bill-wave"></i> ZAR
+                    </button>
+                    <div class="currency-dropdown">
+                        <a href="#" data-currency="ZAR">ZAR (R)</a>
+                        <a href="#" data-currency="USD">USD ($)</a>
+                        <a href="#" data-currency="EUR">EUR (€)</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        
+        <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-links">
+                <a href="#shop">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#discover">Discover</a>
+                <a href="#about">About</a>
+            </nav>
+            
+            <div class="mobile-actions">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#seller" class="btn btn-gold">Become a Seller</a>
+            </div>
+            
+            <div class="currency-selector" style="margin-top: 20px;">
+                <button class="currency-btn" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-money-bill-wave"></i> ZAR
+                </button>
+                <div class="currency-dropdown" style="width: 100%;">
+                    <a href="#" data-currency="ZAR">ZAR (R)</a>
+                    <a href="#" data-currency="USD">USD ($)</a>
+                    <a href="#" data-currency="EUR">EUR (€)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--Hero Section-->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="images/4154241-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                <!--Fallback image if video doesn't load-->
+                <div class="hero-fallback" style="background-image: url('images/');"></div>
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Craft Your Signature Scent</h1>
+                <p>Discover our exclusive collection of luxury fragrances crafted with the finest ingredients from around the world.</p>
+                <a href="#shop" class="btn btn-gold">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Shop Section-->
+    <section class="section" id="shop">
+        <h2 class="section-title">Our Signature Scents</h2>
+        <div class="product-grid">
+            <!--Product 1-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Noir Essence</h3>
+                    <p class="product-description">A bold, mysterious fragrance with notes of oud and vanilla.</p>
+                    <p class="product-price">R1,299.00</p>
+                    <div class="product-actions">
+                        <button class="quick-view-btn">Quick View</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Product 2-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(images/pexels-didsss-1190829.jpg);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Golden Amber</h3>
+                    <p class="product-description">Warm and sensual with hints of saffron and sandalwood.</p>
+                    <p class="product-price">R1,499.00</p>
+                    <div class="product-actions">
+                        <button class="quick-view-btn">Quick View</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Product 3-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Jasmine Bloom</h3>
+                    <p class="product-description">A floral masterpiece with jasmine and white musk.</p>
+                    <p class="product-price">R1,199.00</p>
+                    <div class="product-actions">
+                        <button class="quick-view-btn">Quick View</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Product 4-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(images/pexels-rethaferguson-3059609.jpg);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Citrus Zest</h3>
+                    <p class="product-description">Fresh and vibrant with bergamot and lemon.</p>
+                    <p class="product-price">R999.00</p>
+                    <div class="product-actions">
+                        <button class="quick-view-btn">Quick View</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Collections Section-->
+    <section class="section" id="collections" style="background-color: #f9f9f9;">
+        <h2 class="section-title">Curated Collections</h2>
+        <div class="product-grid">
+            <!--Collection 1-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(images/Collection1.jpg);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Summer Essentials</h3>
+                    <p class="product-description">Fresh scents perfect for warm weather.</p>
+                    <a href="#" class="btn btn-outline" style="display: block; text-align: center; margin-top: 15px;">View Collection</a>
+                </div>
+            </div>
+            
+            <!--Collection 2-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(images/Collection2.jpg);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Evening Luxury</h3>
+                    <p class="product-description">Rich, sophisticated fragrances for night.</p>
+                    <a href="#" class="btn btn-outline" style="display: block; text-align: center; margin-top: 15px;">View Collection</a>
+                </div>
+            </div>
+            
+            <!--Collection 3-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(images/Collection3.jpg);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Floral Dreams</h3>
+                    <p class="product-description">Romantic bouquets in bottle form.</p>
+                    <a href="#" class="btn btn-outline" style="display: block; text-align: center; margin-top: 15px;">View Collection</a>
+                </div>
+            </div>
+
+            <!--Collection 4-->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(images/Collection4.jpg);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Velvet Eclipse</h3>
+                    <p class="product-description">Dark, smooth, sensual midnight bloom.</p>
+                    <a href="#" class="btn btn-outline" style="display: block; text-align: center; margin-top: 15px;">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Seller Section-->
+    <section class="section seller-section" id="seller">
+        <div class="seller-content">
+            <h2 class="section-title" style="color: white;">Join Our Community of Artisans</h2>
+            <p style="max-width: 700px; margin: 0 auto 40px; font-size: 18px;">
+                The Perfume Co. offers a curated platform for independent perfumers to showcase their creations to discerning 
+                customers worldwide. Earn in ZAR, USD, or EUR with competitive commissions.
+            </p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="#seller-form" class="btn btn-gold">Apply Now</a>
+                <a href="#seller-info" class="btn btn-outline" style="color: white; border-color: white;">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Testimonials-->
+    <section class="section testimonials" id="discover">
+        <h2 class="section-title">Fragrance Stories</h2>
+        <div class="testimonial-grid">
+            <!--Testimonial 1-->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Noir Essence has become my signature scent. I receive compliments every time I wear it."
+                </div>
+                <div class="testimonial-author">- Sarah Khoza. Embalenhle</div>
+            </div>
+            
+            <!--Testimonial 2-->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "As a seller on The Perfume Co., I've been able to grow my small business beyond what I imagined."
+                </div>
+                <div class="testimonial-author">- David Mahlangu. Artisan Perfumer</div>
+            </div>
+            
+            <!--Testimonial 3-->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "The quality of these fragrances rivals designer brands at half the price. Will definitely repurchase."
+                </div>
+                <div class="testimonial-author">- Thando Buthelezi. Kinross</div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Newsletter-->
+    <section class="section newsletter">
+        <h2 class="section-title" style="color: white;">Stay Inspired</h2>
+        <p style="max-width: 600px; margin: 0 auto 30px; font-size: 18px;">
+            Subscribe to receive exclusive offers, fragrance tips, and new product launches.
+        </p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-outline" style="background: white; color: #1A1A1A;">Subscribe</button>
+        </form>
+    </section>
+    
+    <!--About Section-->
+    <section class="section" id="about">
+        <h2 class="section-title">Our Story</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="margin-bottom: 30px; font-size: 18px;">
+                Founded in Secunda - Mpumalanga, The Perfume Co. brings together the finest independent perfumers 
+                from South Africa and around the world. We believe in the art of fragrance-making and connecting creators with discerning customers.
+            </p>
+            <a href="#" class="btn btn-outline">Read More</a>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <footer class="section footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">The Perfume <span>Co.</span></div>
+                <p>Luxury fragrances crafted with passion. Based in South Africa, shipping worldwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <a href="#">For Men</a>
+                <a href="#">For Women</a>
+                <a href="#">Unisex</a>
+                <a href="#">Gift Sets</a>
+                <a href="#">New Arrivals</a>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Help</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Company</h3>
+                <a href="#about">About Us</a>
+                <a href="#seller">Become a Seller</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Wholesale</a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2023 The Perfume Co. All rights reserved. | Site by Close Divison.
+        </div>
+    </footer>
+    
+    <!--Quick View Modal-->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
